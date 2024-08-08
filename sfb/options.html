@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extension Settings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Settings</h1>
+    <label for="customUrls">Add Custom URLs (one per line):</label>
+    <textarea id="customUrls"></textarea>
+    <button id="saveUrls">Save URLs</button>
+
+    <h2>Additional Block Lists</h2>
+    <label for="customLists">Add List URLs (one per line):</label>
+    <textarea id="customLists"></textarea>
+    <button id="saveLists">Save Lists</button>
+
+    <script src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blocked Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0c0c0c;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        .warning {
+            color: #d9534f;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .details {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #181313;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        p {
+            color: #fff;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="warning">This website is blocked</div>
+        <div class="details">
+            <p>The page you attempted to visit has been blocked for your safety.</p>
+            <p>This site is identified as a potential threat.</p>
+            <p><strong>Recommended Action:</strong> Do not proceed to this site.</p>
+        </div>
+        <button onclick="proceedAnyway()">Proceed Anyway</button>
+    </div>
+
+    <script>
+        function proceedAnyway() {
+            if (confirm("You are about to proceed to a potentially dangerous site at your own risk. Do you want to continue?")) {
+                // Get the original URL from query parameters
+                const urlParams = new URLSearchParams(window.location.search);
+                const originalUrl = urlParams.get('url');
+                
+                // Redirect to the original URL
+                if (originalUrl) {
+                    window.location.href = originalUrl;
+                } else {
+                    alert("Error: Original URL not found.");
+                }
+            }
+        }
+    </script>
+</body>
+</html>

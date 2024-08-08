@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "Phishing Patrol",
+    "version": "1.0",
+    "description": "Protects users from phishing and scam sites.",
+    "permissions": [
+      "webRequest",
+      "webRequestBlocking",
+      "storage",
+      "<all_urls>"
+    ],
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "options_ui": {
+      "page": "options.html",
+      "open_in_tab": true
+    },
+    "icons": {
+      "48": "icon.png"
+    },
+    "browser_action": {
+      "default_icon": "icon.png"
+    },
+    "web_accessible_resources": [
+      "blocked.html"
+    ]
+  }
+  
