@@ -22,6 +22,13 @@
             padding: 10px 15px;
             font-size: 16px;
         }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
     </style>
 </head>
 <body>
@@ -34,6 +41,21 @@
     <label for="customLists">Add List URLs (one per line):</label>
     <textarea id="customLists"></textarea>
     <button id="saveLists">Save Lists</button>
+
+    <h2>Security Settings</h2>
+    <label><input type="checkbox" id="encryptionEnabled"> Enable Encryption</label>
+    <label><input type="checkbox" id="integrityCheckEnabled"> Enable Integrity Check</label>
+    <button id="saveSecuritySettings">Save Security Settings</button>
+
+    <h2>Whitelist Settings</h2>
+    <label for="whitelistUrls">Add Whitelist URLs (one per line):</label>
+    <textarea id="whitelistUrls"></textarea>
+    <button id="saveWhitelistUrls">Save Whitelist</button>
+    
+    <h2>Safe Mode</h2>
+    <label><input type="checkbox" id="safeModeEnabled"> Enable Safe Mode</label>
+    <button id="saveSafeMode">Save Safe Mode Setting</button>
+
 
     <script src="options.js"></script>
 </body>
