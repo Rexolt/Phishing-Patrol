@@ -26,17 +26,7 @@ The extension utilizes several trusted sources for identifying malicious URLs:
 ## Settings
 
 - **Add Custom URLs:** Users can manually input URLs to be blocked by the extension.
-- **Add Additional Lists:** Users can specify additional URL list sources within the extension settings.
-
-## Development
-
-To contribute to this project:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/YourFeature`).
-3. Commit your changes (`git commit -am 'Add some feature'`).
-4. Push to the branch (`git push origin feature/YourFeature`).
-5. Create a new Pull Request.
+- **Add Additional Lists:** Users can specify additional URL list sources within the external.
 
 ## License
 

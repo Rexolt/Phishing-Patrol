@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extension Settings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Settings</h1>
+    <label for="customUrls">Add Custom URLs (one per line):</label>
+    <textarea id="customUrls"></textarea>
+    <button id="saveUrls">Save URLs</button>
+
+    <h2>Additional Block Lists</h2>
+    <label for="customLists">Add List URLs (one per line):</label>
+    <textarea id="customLists"></textarea>
+    <button id="saveLists">Save Lists</button>
+
+    <h2>Security Settings</h2>
+    <label><input type="checkbox" id="encryptionEnabled"> Enable Encryption</label>
+    <label><input type="checkbox" id="integrityCheckEnabled"> Enable Integrity Check</label>
+    <button id="saveSecuritySettings">Save Security Settings</button>
+
+    <h2>Whitelist Settings</h2>
+    <label for="whitelistUrls">Add Whitelist URLs (one per line):</label>
+    <textarea id="whitelistUrls"></textarea>
+    <button id="saveWhitelistUrls">Save Whitelist</button>
+    
+    <h2>Safe Mode</h2>
+    <label><input type="checkbox" id="safeModeEnabled"> Enable Safe Mode</label>
+    <button id="saveSafeMode">Save Safe Mode Setting</button>
+
+
+    <script src="options.js"></script>
+</body>
+</html>
