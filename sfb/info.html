@@ -3,17 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>info</title>
+    <title>Blocked Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+        }
+        h1 {
+            color: #d9534f;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #5bc0de;
+            font-size: 22px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .danger {
+            color: #d9534f;
+            font-weight: bold;
+        }
+        .example {
+            font-style: italic;
+            color: #555;
+        }
+        .important {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #5bc0de;
+        }
+        .important strong {
+            font-size: 18px;
+            color: #d9534f;
+        }
+        .recommendation {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff5cc;
+            border-left: 4px solid #f0ad4e;
+        }
+        .recommendation strong {
+            font-size: 18px;
+            color: #f0ad4e;
+        }
+        .disclaimer {
+            font-size: 14px;
+            color: #888;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border-left: 4px solid #d9534f;
+        }
+        .liability {
+            font-size: 12px;
+            color: #888;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border-left: 4px solid #d9534f;
+        }
+    </style>
 </head>
 <body>
-    <h2>Detailed Information on Why Websites are Blocked</h2>
-    <h3><strong>1. Phishing Attacks</strong></h3>
-    <p>
-        <strong>What is Phishing?</strong><br>
-Phishing is a type of cyber attack where attackers attempt to trick users into providing sensitive information, such as usernames, passwords, or credit card details, by pretending to be a legitimate entity.<br> This is typically done through fake websites that closely resemble real ones, such as banking or email service login pages.<br>
+    <div class="container">
+        <h1>Access to This Website is Blocked</h1>
+        <p>Your safety is our priority. This website has been blocked because it is identified as a potential threat. Below are detailed explanations of the common dangers associated with this and similar sites:</p>
 
-Why is it Dangerous?
-Phishing sites can lead to identity theft, financial loss, and unauthorized access to your personal accounts. Once attackers have your information, they can use it for malicious purposes, such as draining your bank account,<br> committing fraud in your name, or selling your data on the dark web.
-    </p>
+        <h2>Phishing Attacks</h2>
+        <p><span class="danger">Phishing</span> is a type of cyber attack where attackers impersonate legitimate organizations to steal your sensitive information, such as usernames, passwords, and credit card numbers. These attacks often involve creating fake websites that look nearly identical to real ones, such as your bank, email provider, or social media platforms.</p>
+        <p>When you enter your information into these fake sites, it is sent directly to the attackers, who can then use it for various malicious purposes, including identity theft, unauthorized access to your accounts, and financial fraud.</p>
+        <p class="example">Example: A phishing email claims to be from your bank and asks you to "verify your account" by clicking a link that leads to a fake bank login page. Once you enter your credentials, the attackers gain access to your real bank account.</p>
+
+        <h2>Malware Distribution</h2>
+        <p><span class="danger">Malware</span> is a broad category of malicious software designed to cause harm to your computer, steal data, or give attackers control over your device. Malware can come in many forms, including viruses, worms, trojans, ransomware, spyware, and adware.</p>
+        <p>Malware can be distributed through infected websites, email attachments, or by tricking you into downloading fake software updates. Once on your device, malware can delete files, steal personal information, encrypt your data (holding it ransom), or allow attackers to spy on your activities.</p>
+        <p class="example">Example: You visit a website offering free downloads of popular software. Instead of the legitimate software, you unknowingly download malware that encrypts your files and demands a ransom payment to unlock them.</p>
+
+        <h2>Scam Websites</h2>
+        <p><span class="danger">Scam websites</span> are fraudulent sites designed to trick you into giving away money, personal information, or both. These sites often pretend to be legitimate businesses, charities, or online services, but their real goal is to defraud you.</p>
+        <p>Scam websites might offer products at prices that are too good to be true, ask for donations to fake charities, or pretend to be technical support services that "find" nonexistent problems on your computer. Interacting with these sites can lead to financial loss, identity theft, and damage to your reputation.</p>
+        <p class="example">Example: A website advertises high-end electronics at a fraction of the usual cost. After you make a purchase, the product never arrives, and the site disappears, taking your money with it.</p>
+
+        <h2>Drive-by Downloads</h2>
+        <p>A <span class="danger">drive-by download</span> is a type of attack where malicious software is automatically downloaded to your computer without your consent or knowledge when you visit a compromised or malicious website. You don't need to click anything for the download to begin; simply loading the page is enough.</p>
+        <p>Drive-by downloads often exploit vulnerabilities in your web browser, plugins, or operating system. The downloaded malware can perform a variety of harmful actions, such as stealing data, logging your keystrokes, or turning your computer into a bot for further attacks.</p>
+        <p class="example">Example: You visit a seemingly harmless website, but in the background, malicious code exploits a vulnerability in your browser, downloading spyware that monitors your online activities without your knowledge.</p>
+
+        <h2>Fake Software Updates</h2>
+        <p><span class="danger">Fake software updates</span> are deceptive prompts that appear to be legitimate updates for your browser, operating system, or other software but are actually designed to install malware. These prompts often appear on compromised websites or through pop-up ads and mimic the appearance of real update notifications.</p>
+        <p>Installing a fake update can lead to severe consequences, including the installation of malware that steals your data, encrypts your files, or gives attackers control over your computer. Always ensure that you only update software through official channels.</p>
+        <p class="example">Example: A pop-up on a website warns that your Flash Player is out of date and offers a download link. If you click it, instead of updating Flash, you install a trojan that grants attackers access to your system.</p>
+
+        <h2>Command and Control Servers (C&C)</h2>
+        <p><span class="danger">Command and Control (C&C)</span> servers are used by cybercriminals to manage and control networks of infected devices, known as botnets. These servers issue commands to the infected machines, which could be your computer, to carry out malicious activities, such as launching distributed denial-of-service (DDoS) attacks, sending spam, or stealing data.</p>
+        <p>Accessing a C&C server or being redirected to one could mean that your device is compromised and being used for malicious purposes without your knowledge. It also means that the attackers can continue to issue commands to your device as long as it remains infected.</p>
+        <p class="example">Example: Your computer becomes part of a botnet after visiting a compromised website. The botnet's C&C server instructs your computer to participate in a DDoS attack against a target website, consuming your bandwidth and potentially making you a target for legal action.</p>
+
+        <div class="important">
+            <strong>Important:</strong> While this extension provides a layer of protection, it does not guarantee 100% safety from all online threats. Cybersecurity is complex, and new threats are constantly emerging. It is crucial to stay informed, be cautious, and take proactive measures to protect yourself online.
+        </div>
+
+        <div class="recommendation">
+            <strong>Recommendation:</strong> We strongly recommend using comprehensive antivirus software in addition to this extension to enhance your online security. Software like <a href="https://www.kaspersky.com" target="_blank">Kaspersky</a> provides advanced protection against various types of malware, phishing, and other threats. For more tips on preventing phishing attacks, visit this <a href="https://www.kaspersky.com/resource-center/preemptive-safety/phishing-prevention-tips" target="_blank">Kaspersky guide on phishing prevention</a>.
+        </div>
+
+        <div class="recommendation">
+            <strong>More Information:</strong> Here are some additional resources to help you stay safe online:
+            <ul>
+                <li><a href="https://www.consumer.ftc.gov/articles/how-recognize-and-avoid-phishing-scams" target="_blank">How to Recognize and Avoid Phishing Scams (FTC)</a></li>
+                <li><a href="https://staysafeonline.org/stay-safe-online/" target="_blank">Stay Safe Online (National Cyber Security Alliance)</a></li>
+                <li><a href="https://www.cyberaware.gov.uk/" target="_blank">Cyber Aware (UK Government)</a></li>
+            </ul>
+        </div>
+
+        <div class="disclaimer">
+            <strong>Disclaimer:</strong> This project is not sponsored or supported by any company, including Kaspersky. The recommendations provided are based on independent research and are intended solely to help users enhance their online security.
+        </div>
+
+        <div class="liability">
+            <strong>Liability:</strong> This extension is provided as is, without any guarantees of any kind. We do not accept any liability for any damages or losses that may occur from using this extension or relying on its functionality.
+        </div>
+    </div>
 </body>
 </html>
