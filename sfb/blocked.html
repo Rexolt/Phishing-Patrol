@@ -55,15 +55,16 @@
         </div>
         <button onclick="proceedAnyway()">Proceed Anyway</button>
     </div>
+    <button onclick="window.location.href='info.html';">More Information</button>
 
     <script>
         function proceedAnyway() {
             if (confirm("You are about to proceed to a potentially dangerous site at your own risk. Do you want to continue?")) {
-                // Get the original URL from query parameters
+                
                 const urlParams = new URLSearchParams(window.location.search);
                 const originalUrl = urlParams.get('url');
                 
-                // Redirect to the original URL
+                
                 if (originalUrl) {
                     window.location.href = originalUrl;
                 } else {
